@@ -1,0 +1,22 @@
+@import "bootstrap";
+@import "chatrooms";
+@import "messages";
+@import "users";
+
+
+.github-fork-ribbon.right-bottom:before {
+    background-color: black;
+}
+
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.navbar {
+  margin-bottom: 20px;
+}
+
+.form-inline .btn {
+  margin-left: 5px;
+}

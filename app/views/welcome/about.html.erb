@@ -1,0 +1,8 @@
+<div class="jumbotron">
+  <h1>Bem-vindo ao Action Chat!</h1>
+  <p>Exemplo de chat com Rails 5 + Action Cable</p>
+  <%if current_user%>
+    <p><span class="glyphicon glyphicon-heart"></span> Bem-vindo de volta, @<%= current_user.username%> <span class="glyphicon glyphicon-heart"></span></p>
+  <%end%>
+  <p>Faça login para navegar pelos tópicos e trocar mensagens.</p>
+</div>

@@ -1,0 +1,18 @@
+<div class="row justify-content-center">
+  <div class="col-6">
+      <div class="well">
+        <div class="chatroom-form">
+          <h1>Criar tópico</h1>
+          <%= form_for @chatroom do |f| %>
+            <div class="input-group">
+              <span class="input-group-addon">#</span>
+              <%= f.text_field :topic, class: "form-control"%>
+            </div>
+            <%= f.submit "Criar Tópico", class: "btn btn-primary", id: "create-chatroom" %>
+          <% end %>
+        </div>
+      </div>
+
+      <%= render partial: 'layouts/flash_errors'%>
+    </div>
+</div>

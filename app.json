@@ -1,0 +1,11 @@
+{
+  "name": "Action Chat",
+  "description": "Chat com Rails 5 + Action Cable",
+  "repository": "https://github.com/victorximenis/action-chat",
+  "keywords": ["rails 5", "action cable", "websockets"],
+  "success_url": "/",
+  "scripts": {
+    "postdeploy": "bundle exec rake db:migrate"
+  },
+  "addons": ["heroku-redis"]
+}

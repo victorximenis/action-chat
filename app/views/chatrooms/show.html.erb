@@ -1,0 +1,29 @@
+<div class="row justify-content-center">
+  <div class="col-8">
+    <h1>#<%= @chatroom.topic %></h1>
+  </div>
+</div>
+<div class="row justify-content-center">
+  <div class="col-8">
+    <div class="card">
+      <div class="card-body">
+        <% if @chatroom.messages.any? %>
+          <div class="panel-body" id="messages">
+            <%= render partial: 'messages/message', collection: @chatroom.messages%>
+          </div>
+        <%else%>
+          <div class="alert alert-info" role="alert">
+            Nenhuma mensagem encontrada
+          </div>
+          <div class="panel-body hidden" id="messages">
+          </div>
+        <%end%>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row justify-content-center" style="margin-top: 20px;">
+  <div class="col-8">
+    <%= render partial: 'messages/message_form', locals: {message: @message, chatroom: @chatroom}%>
+  </div>
+</div>
